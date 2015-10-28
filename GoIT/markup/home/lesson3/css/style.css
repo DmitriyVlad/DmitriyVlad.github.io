@@ -1,0 +1,133 @@
+body {
+	background: #f9f9f9;
+}
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0 46px;
+	width: 968px;
+	background: white;
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(153, 153, 153, 1);
+	-moz-box-shadow: 0px 0px 4px 0px rgba(153, 153, 153, 1);
+	box-shadow: 0px 0px 4px 0px rgba(153, 153, 153, 1);
+}
+
+/* HEADER */
+.header {
+	padding-top: 50px;
+	
+}
+.menu {
+	margin-top: 40px;
+	background-image: url(../img/panel_menu.png);
+	height: 40px;
+	width: 968px;
+}
+.menu li {
+	float: left;
+	height: 40px;
+	
+
+}
+.menu a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-family: Tahoma, Arial, Sans-Serif;
+	line-height: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-size: 15px;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+}
+.menu a:hover {
+	background-image: url(../img/hover_menu.png);
+	border-right: 1px solid #838383;
+	border-left: 1px solid #838383 ;
+}
+
+/* CONTENT */
+.content {
+
+	
+}
+.sidebar {
+	margin-top: 40px;
+	float: left;
+	width: 240px;
+}
+.content-menu {
+	width: 240px;
+	border: 1px solid #c8c8c8
+}
+.content-menu li {
+	border-top: 1px solid #c8c8c8
+}
+.content-menu li:first-child {
+	border: none;
+}
+.content-menu a {
+	display: block;
+	padding-left: 20px;
+	line-height: 37px;
+	color: #656363;
+	font-size: 13px;
+	text-decoration: none;
+	font-family: Tahoma, Arial, Sans-Serif;
+	transition: 0.2s all;
+}
+.content-menu a:hover {
+	padding-left: 35px;
+	background: #f9f9f9;
+}
+.article {
+	margin-top: 40px;
+	float: right;
+	width: 677px;
+	
+}
+.main-image {
+	padding: 40px 0;
+	width: 677px;
+	border: 1px solid #c8c8c8;
+	text-align: center;
+}
+.article p {
+	padding: 30px 22px 0 22px ;
+	font-family: Tahoma, Arial, Sans-Serif;
+	font-size: 13px;
+	line-height: 20px;
+	color: #2c2c2c;
+}
+/* FOOTER*/
+.footer {
+	padding: 50px 0;
+}
+.bottom-menu {
+	width: 968px;
+	margin-top: 63px;
+	margin-bottom: 60px;
+	float: left;
+	background-image: url(../img/bottom_menu_panel.png);
+}
+.bottom-menu li {
+	float: left;
+	line-height: 40px;
+
+}
+.bottom-menu a {
+	color: #2c2c2c;
+	line-height: 40px;
+	text-decoration: none;
+	display: block;
+	padding: 0 45px 0 45px;
+}
+.bottom-menu a:hover {
+	text-decoration: underline;
+}
+.bottom-menu .cr {
+	float: right;
+	padding-right: 26px;
+}
