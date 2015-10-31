@@ -1,0 +1,30 @@
+body {
+	background-image: url(../img/background2.png);
+	background-repeat: repeat-x;
+	h100%
+
+}	
+.wrapper {
+	margin: 0 auto;
+	background-color: #fff;
+	width: 998px;
+	height: 988px;
+	
+
+}
+.Header {
+	height: 175px;
+	background-color: black;
+}
+.Content {
+	
+}
+.Banner {
+	
+}
+img {
+	display: block;
+	position: absolute;	
+	
+} 
+	
