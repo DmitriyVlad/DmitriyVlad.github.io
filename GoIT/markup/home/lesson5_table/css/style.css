@@ -1,0 +1,32 @@
+body {
+	background-color: #282828;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 550px;
+}
+table {
+	border-collapse: collapse;
+	width: 514px;
+	height: 541px;
+	
+	border: 11px solid #282828;
+}
+td {
+	border: 9px solid #090c09;
+}
+.yellow-box {
+	background-color: #fff04a;
+}
+.red-box {
+	background-color: #ff6144;
+}
+.blue-box {
+	background-color: #0d4a8b;
+}
+.black-box {
+	background-color: #111111;
+}
+.white-box {
+	background-color: #fff;
+}
