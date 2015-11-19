@@ -1,3 +1,4 @@
+
 .clearfix {
 	content: '';
 	display: block;
@@ -35,7 +36,6 @@ header {
 	background: url(../img/telephone.png) 0 0 no-repeat;
 	width: 22px;
 	height: 21px;
-	
 }
 .reg-panel {
 	float: left;
@@ -64,8 +64,8 @@ header {
 }
 .log-in input:not([type="submit"]) {
 	-webkit-box-shadow: 0px 0px 0px 1px rgba(130,148,156,1);
--moz-box-shadow: 0px 0px 0px 1px rgba(130,148,156,1);
-box-shadow: 0px 0px 0px 1px rgba(130,148,156,1);
+	-moz-box-shadow: 0px 0px 0px 1px rgba(130,148,156,1);
+	box-shadow: 0px 0px 0px 1px rgba(130,148,156,1);
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 11px;
 	height: 14px;
@@ -229,7 +229,9 @@ h1 a {
 	background: url(../img/basket.png) 0 0 no-repeat;
 }
 
-/* MAIN */
+/* MAIN-CONTENT */
+
+/* search forms */
 .search {
 	font-size: 10px;
 }
@@ -305,4 +307,155 @@ h1 a {
 	margin-right: 10px;
 	position: relative;
 }
+.content {
+	margin-top: 15px;
+}
+
+/* aside left */
+.left {
+	float: left;
+	display: block;
+	width: 183px;
+	margin-top: 4px;
+	color: #114165;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.left>p {
+	text-transform: uppercase;
+	height: 25px;
+	width: 148px;
+	font-size: 12px;
+	border-radius: 14px;
+	line-height: 26px;
+	border: 1px solid #8b979c;
+	margin-bottom: 13px;
+	padding-left: 27px;
+	background: url(../img/product-icon.png) no-repeat 2px 1px;
+	box-shadow: 1px 1px 5px 0px rgba(139, 151, 156, 1);
+}
+.left-menu p {
+	font-size: 14px;
+	text-transform: uppercase;
+	height: 26px;
+	width: 120px;
+	border: 1px solid #8b979c;
+	border-radius: 13px;
+	line-height: 27px;
+	padding-left: 28px;
+	background: url(../img/marker-big.png) 3px 1px no-repeat;
+}
+.left-submenu li {
+	margin-left: 30px;
+	padding-left: 13px;
+	background: url(../img/marker2.png) 0 no-repeat;
+}
+.left-submenu a {
+	display: block;
+	text-decoration: none;
+	color: #465961;
+	line-height: 26px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 13px;
+	transition: 0.2s all;
+}
+.left-submenu li:hover {
+	background: url(../img/bolder-marker.png) 0 10px no-repeat;
+}
+.left-submenu a:hover {
+	color: #0c3256;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/* main */
+main {
+	float: left;
+	display: block;
+	width: 520px;
+	height: 628px;
+	padding-left: 7px;
+	margin: 0 9px 0 9px;
+	border-radius: 3px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5e7e8+0,93a7b0+100 */
+	background: rgb(229,231,232); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(229,231,232) 0%, rgb(147,167,176) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(229,231,232) 0%,rgb(147,167,176) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(229,231,232) 0%,rgb(147,167,176) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e7e8', endColorstr='#93a7b0',GradientType=0 ); /* IE6-9 */
+}
+main .product {
+	float: left;
+	margin: 15px 15px 13px 15px;
+}
+main a {
+	text-decoration: none;
+}
+main figcaption {
+	color: #206988;
+	font-size: 15px;
+	text-align: center;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+main span {
+	display: block;
+	font-size: 13px;
+	color: #1f2528;
+}
+main figcaption+p {
+	width: 136px;	
+	height: 122px;
+	background-color: #fff;
+	border: 1px solid #b0b9bc;
+	border-radius: 7px;
+	text-align: center;
+	padding-top: 4px;
+	margin-bottom: 5px;
+}
+main .price {
+	font-family: font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+	color: #114165;
+	text-align: center;
+}
+
+/* aside right */
+.right {
+	float: left;
+	display: block;
+	width: 183px;
+	margin-top: 4px;
+	color: #114165;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.right>p {
+	text-transform: uppercase;
+	height: 25px;
+	width: 148px;
+	font-size: 12px;
+	border-radius: 14px;
+	line-height: 26px;
+	border: 1px solid #8b979c;
+	margin-bottom: 13px;
+	padding-left: 27px;
+	background: url(../img/product-icon.png) no-repeat 2px 1px;
+	box-shadow: 1px 1px 5px 0px rgba(139, 151, 156, 1);
+}
+.right-menu p {
+	font-size: 14px;
+	text-transform: uppercase;
+	height: 26px;
+	width: 120px;
+	border: 1px solid #8b979c;
+	border-radius: 13px;
+	line-height: 27px;
+	padding-left: 28px;
+	background: url(../img/marker-big.png) 3px 1px no-repeat;
+}
+
+
 
