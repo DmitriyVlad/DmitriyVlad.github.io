@@ -84,7 +84,7 @@ border-radius: 0 0 1px 1px;
 .menu-left a {
 	display: block;
 	color: #60b5ed;
-	line-height: 35px;
+	line-height: 36px;
 	padding: 0 12px;
 }
 .menu-left li a:hover {
@@ -107,8 +107,12 @@ h1 {
 }
 .register {
 	height: 100%;
-	padding: 36px 141px 22px 141px;
+	padding: 36px 0 22px 0;
 	background-color: rgba(0, 0, 0, 0.63);
+}
+.form-wrapper {
+	width: 280px;
+	margin: 0 auto;
 }
 .fb {
 	margin-bottom: 32px;
