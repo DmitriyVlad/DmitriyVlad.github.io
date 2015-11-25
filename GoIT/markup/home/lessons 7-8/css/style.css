@@ -1,0 +1,381 @@
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/League Gothic/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/League Gothic/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/League Gothic/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/League Gothic/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/League Gothic/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/Open Sans/opensans-light-webfont.eot');
+    src: url('../fonts/Open Sans/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Open Sans/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/Open Sans/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/Open Sans/opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+/* HEADER */
+header {
+	background: url(../img/head-bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 517px;
+	width: 100%;
+}
+.header-wrap {
+	position: relative;
+	width: 280px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/* logo */
+.logo-block {
+	width: 156px;
+	margin: 0 auto;
+	padding-top: 69px;
+	margin-bottom: 36px;
+}
+.logo-block__link {
+	display: block;
+}
+
+/* menu */
+.menu__item {
+	display: block;
+	text-align: center;
+	position: relative;
+	padding-bottom: 8px;
+	width: 47px;
+	margin: 0 auto;
+}
+.menu__link {
+	display: block;
+	font-family: "League Gothic";
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
+.menu__underline {
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: #edbfff;
+	bottom: -2px;
+	left: 0;
+}
+.submenu {
+	z-index: 1;
+	position: absolute;
+	left: -9999px;
+	opacity: 0;
+	width: 244px;
+	background-color: rgba(54, 41, 62, .9);
+	border: 1px solid #111b22;
+	border-radius: 10px;
+	overflow: hidden;
+	-webkit-transition: 0.25s linear opacity;
+	-o-transition: 0.25s linear opacity;
+	transition: 0.25s linear opacity;
+	-moz-box-shadow: 0 3px 5px rgba(0,0,0,.16);
+	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.16);
+	box-shadow: 0 3px 5px rgba(0,0,0,.16);
+}
+.submenu__item {
+	position: relative;
+}
+.submenu__link {
+	display: block;
+	width: 244px;
+	line-height: 40px;
+	border-top: 1px solid rgba(82, 63, 90, .9);
+	border-bottom: 1px solid rgba(54, 40, 62, .9);
+	font-family: "League Gothic";
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+}
+.tshadow {
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
+.submenu__underline-short {
+	position: absolute;
+	width: 47px;
+	height: 2px;
+	background: #edbfff;
+	bottom: 4px;
+	left: 50%;
+	margin-left: -23px;
+}
+.submenu__underline {
+	position: absolute;
+	height: 2px;
+	background: #edbfff;
+	left: 50%;
+	width: 0;
+	bottom: 1px;
+	-webkit-transition: 0.25s all ease;
+	-o-transition: 0.25s all ease;
+	transition: 0.25s all ease;
+}
+.menu__item:hover {
+
+}
+.menu__item:hover .submenu {
+	top: -9px;
+	left: -100px;
+	opacity: 1;
+}
+.menu__item:hover .submenu__item:hover {
+	background: rgba(44, 35, 50, .9);
+}
+.menu__item:hover .submenu__item:hover .submenu__underline {
+	left: 0;
+	position: absolute;
+	height: 2px;
+	background: #edbfff;
+	width: 100%;
+	bottom: 1px;
+}
+
+/* slider */
+.slider {
+	z-index: 0;
+	position: relative;
+	margin-top: 122px;
+	margin-left: 45px;
+}
+.artcl {
+	font-family: "League Gothic";
+}
+.artcl__title {
+	font-size: 36px;
+	color: #fefefe;
+	text-shadow: 0 2px 2px rgba(0,0,0,.3);
+}
+.artcl__sub-title {
+	margin-top: 3px;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #edbfff;
+	text-shadow: 0 2px 2px rgba(0,0,0,.3);
+}
+.arrows {
+	position: absolute;
+	height: 40px;
+	width: 28px;
+	top: 50%;
+	margin-top: -20px;
+}
+.arrow-left {
+	background: url(../img/arrow-left.png) 0 0 no-repeat;
+	left: -67px;
+}
+.arrow-right {
+	background: url(../img/arrow-right.png) 0 0 no-repeat;
+	left: 229px;
+}
+
+/* radioblock*/
+.radio-block {
+	margin: 77px auto 0 auto;
+	width: 84px;
+}
+.radio-block__item {
+	display: none;
+}
+.radio-block__label {
+	cursor: pointer;
+	height: 17px;
+	width: 17px;
+	display: inline-block;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 17px;
+}
+.active {
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, .7) inset;
+	background-color: #fff;
+}
+.radio-block__label:hover {
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, .7) inset;
+	background-color: #fff;
+}
+
+/* MAIN */
+/* about-block */
+.about {
+	height: 597px;
+	background: rgb(118,82,132); /* Old browsers */ /* FF3.6-15 */
+	background: -webkit-linear-gradient(rgb(118,82,132) 0%, rgb(54,41,61) 100%);
+	background: -o-linear-gradient(rgb(118,82,132) 0%, rgb(54,41,61) 100%);
+	background: linear-gradient(rgb(118,82,132) 0%, rgb(54,41,61) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#765284', endColorstr='#36293d',GradientType=0 ); /* IE6-9 */
+	border-top: 1px solid #34273c;
+	border-bottom: 1px solid #12191f;
+}
+.about-wrap {
+	position: relative;
+	width: 280px;
+	height: 100%;
+	margin: 0 auto;
+}
+.about-company {
+	margin-top: 70px;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 280px;
+	height: 130px;
+	padding-left: 62px;
+}
+.about-company:after {
+	content: '';
+	width: 27px;
+	height: 27px;
+	position: absolute;
+	left: 12px;
+	top: 2px;
+	background: url(../img/sprite.png) no-repeat;
+}
+.about-company--message:after {
+	background-position: -28px 0 ;
+	width: 29px;
+	height: 25px;
+}
+.about-company--music:after {
+	background-position: -58px 0;
+	width: 27px;
+	height: 28px;
+}
+.about-company--message {
+	margin-top: 28px;
+}
+.about-company--music {
+	margin-top: 45px;
+}
+.about-company__title {
+	color: #fff;
+	font-family: "League Gothic";
+	font-size: 24px;
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 #0e1418;
+}
+.about-company__text {
+
+	color: #fff;
+	font-family: "Open Sans Light", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	text-shadow: 0 1px 0 #0e1418;
+}
+.about-company__link {
+	margin-top: 18px;
+	color: #fff;
+	font-family: "League Gothic";
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #0e1418;
+	float: right;
+}
+.about-company__link:hover {
+	text-shadow: 0 0 8px rgba(255,255,255,.8);
+}
+
+/* content */
+.content {
+	height: 786px;
+	background: #f9f9f9;
+	border-bottom: 1px solid #e6e6e6;
+}
+.content-wrap {
+	position: relative;
+	width: 280px;
+	height: 100%;
+	margin: 0 auto;
+}
+.artcl2 {
+	position: relative;
+	display: block;
+	margin-top: 70px;
+	padding: 27px 0 33px 35px;
+	width: 256px;
+	float: right;
+	background: #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.artcl2__title {
+	color: #454545;
+	font-family: "League Gothic";
+	font-size: 24px;
+	text-shadow: 0 1px 0 #fff;
+	text-transform: uppercase;
+}
+.artcl2__title-pink {
+	display: block;
+	color: #edbfff;
+}
+.artcl2__img {
+	position: absolute;
+	top: 21px;
+	left: -24px;
+}
+.artcl2__text {
+	width: 180px;
+	color: #454545;
+	font-family: "Open Sans Light", sans-serif;
+	font-size: 16px;
+	text-shadow: 0 1px 0 #fff;
+	line-height: 24px;
+}
+
+/* btn-slider */
+.btn-slider {
+	display: block;
+	position: relative;
+	width: 85px;
+	height: 19px;
+	margin: 21px 77px 0 120px;
+}
+.btn-slider__item {
+	width: 19px;
+	height: 19px;
+	float: left;
+	margin-left: 3px;
+	background: url(../img/btn-slider-sprite.png);
+}
+
+
+
+
+.brands {
+	height: 422px;
+	background: #f9f9f9;
+}
+footer {
+	width: 100%;
+	height: 201px;
+	background: url(../img/footer-bg.png) 100% 100% no-repeat;
+	background-size: cover;
+}
+
