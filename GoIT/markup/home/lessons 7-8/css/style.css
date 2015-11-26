@@ -18,6 +18,26 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../fonts/Open Sans Regular/opensans-regular-webfont.eot');
+    src: url('../fonts/Open Sans Regular/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Open Sans Regular/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Open Sans Regular/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/Open Sans Regular/opensans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans ExtraBold';
+    src: url('../fonts/Open Sans Extrabold/opensans-extrabold-webfont.eot');
+    src: url('../fonts/Open Sans Extrabold/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Open Sans Extrabold/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/Open Sans Extrabold/opensans-extrabold-webfont.woff') format('woff'),
+         url('../fonts/Open Sans Extrabold/opensans-extrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 .clearfix:after {
 	content: '';
 	clear: both;
@@ -299,6 +319,8 @@ header {
 
 /* content */
 .content {
+	position: relative;
+	overflow: hidden;
 	height: 786px;
 	background: #f9f9f9;
 	border-bottom: 1px solid #e6e6e6;
@@ -315,7 +337,7 @@ header {
 	margin-top: 70px;
 	padding: 27px 0 33px 35px;
 	width: 256px;
-	float: right;
+	margin-left: 24px;
 	background: #fff;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -353,29 +375,142 @@ header {
 .btn-slider {
 	display: block;
 	position: relative;
-	width: 85px;
+	width: 88px;
 	height: 19px;
 	margin: 21px 77px 0 120px;
 }
 .btn-slider__item {
+	cursor: pointer;
 	width: 19px;
 	height: 19px;
 	float: left;
 	margin-left: 3px;
 	background: url(../img/btn-slider-sprite.png);
 }
+.btn-slider__item:hover {
+	background-position: 0 -21px;
+}
 
+/* updates */
+.updates {
+	display: block;
+	margin-top: 50px;
+	height: 100%;
+}
+.updates__title {
+	color: #454545;
+	font-family: "League Gothic";
+	font-size: 30px;
+	text-shadow: 0 1px 0 #fff;
+	text-transform: uppercase;
+}
+.updates__recent-box {
+	margin-top: 21px;
+	padding-left: 49px;
+	position: relative;
+	height: 49px;
+	background: url(../img/spr-updates.png) no-repeat;
+}
+.updates__recent-box__bold-text {
+	padding-top: 4px;
+	display: block;
+	margin-left: 17px;
+	width: 211px;
+	font-family: "Open Sans ExtraBold";
+	font-size: 16px;
+	color: #454545;
+	text-shadow: 0 1px 0 #fff;
+}
+.updates__recent-box__text {
+	display: block;
+	letter-spacing: -0.4px;
+	margin-left: 17px;
+	width: 213px;
+	margin-top: 8px;
+	font-family: "Open Sans Regular";
+	font-size: 16px;
+	color: #454545;
+	text-shadow: 0 1px 0 #fff;
+}
+.bgi-2 {
+	background-position: 0 -50px;
+}
+.bgi-3 {
+	background-position: 0 -100px;
+}
+.updates__link {
+	display: block;
+	float: right;
+	margin-top: 23px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #454545;
+	font-family: "League Gothic";
+	font-size: 18px;
+	text-shadow: 0 1px 0 #fff;
+}
+.updates__link:hover {
+	text-shadow: 0 0 8px rgba(130,130,130, .8)
+}
 
-
-
-.brands {
+/* pre-footer */
+.pre-footer {
+	position: relative;
+	overflow: hidden;
 	height: 422px;
 	background: #f9f9f9;
 }
+.pre-footer-wrap {
+	position: relative;
+	width: 280px;
+	height: 100%;
+	margin: 0 auto;
+}
+.brands {
+	display: block;
+	width: 240px;
+	margin: 0 auto;
+}
+.brands__item {
+	float: left;
+	margin: 51px 0 0 20px;
+}
+.brands__item:nth-child(2) {
+	margin: 51px 0 0 55px;
+}
+.brands__item:nth-child(3) {
+	margin: 61px 0 0 28px;
+}
+.brands__item:nth-child(4) {
+	margin: 62px 0 0 65px;
+}
+.brands__item:nth-child(5) {
+	margin: 63px 0 0 0;
+}
+.brands__item:nth-child(6) {
+	margin: 44px 0 0 56px;
+}
+
+/* FOOTER */
 footer {
+	overflow: hidden;
 	width: 100%;
 	height: 201px;
 	background: url(../img/footer-bg.png) 100% 100% no-repeat;
 	background-size: cover;
+}
+.copyright {
+	text-align: center;
+	margin-top: 43px;
+	color: #fff;
+	font-family: "Open Sans Light", sans-serif;
+	font-size: 12px;
+	text-shadow: 1px 2px 2px rgba(0,0,0,.4);
+}
+.copyright__text {
+	color: #fff;
+	font-family: "Open Sans ExtraBold", sans-serif;
+	font-size: 12px;
+	text-shadow: 1px 2px 2px rgba(0,0,0,.4);
 }
 
