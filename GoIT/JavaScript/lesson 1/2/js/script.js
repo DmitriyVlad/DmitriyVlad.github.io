@@ -1,21 +1,26 @@
-var names = [];
+var names = [],
+userName,
+flag = false;
 
 for (var i = 0; i < 5; i++) {
 	names[i] = prompt('Введите имя');
 };
 
-var userName = prompt('Введите имя пользователя');
+userName = prompt('Введите имя пользователя');
 
 for (var j = 0; j < names.length; j++) {
 	if (userName == names[j]) {
-		alert(userName + ', вы успешно вошли');
+		flag = true;
 		break;
 	} 
 };
 
-if (userName != names[j]) {
+if (flag) {
+	alert(userName + ', вы успешно вошли');
+} else {
 	alert('Введенное имя пользователя отсутствует');
 }
+
 
 
 
