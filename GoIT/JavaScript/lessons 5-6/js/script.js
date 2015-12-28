@@ -66,8 +66,8 @@ function startTimer() {
 function pauseTimer() {
 	btnStart.classList.add('btn-success');
 	btnStart.classList.remove('btn-primary');
-	btnStart.innerHTML = 'Con..';
-	btnGroup.style.width = '320px';
+	btnStart.innerHTML = 'Continue';
+	btnGroup.style.width = '410px';
 	clearInterval(counter);
 	displayTime.innerHTML = currentTime;
 	btnStart.removeEventListener("click", pauseTimer);
