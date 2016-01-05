@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.jcarousel.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<h3>jCarousel</h3>
+		<div class="jcarousel-wrapper">
+			<div class="jcarousel">
+				<ul>
+					<li><img src="img/img-1.jpg" height="431" width="576" alt=""></li>
+					<li><img src="img/img-2.jpg" alt=""></li>
+				</ul>
+			</div>
+			<a href="#" class="jcarousel-prev">&lsaquo;</a>
+		  	<a href="#" class="jcarousel-next">&rsaquo;</a>
+		  	<p class="jcarousel-pagination">
+		  		<a href="#1">1</a>
+		  		<a href="#2">2</a>
+		  		<a href="#3">3</a>
+		  		<a href="#4">4</a>
+		  		<a href="#5">5</a>
+		  		<a href="#6">6</a>
+		  	</p>
+		</div>
+		<h3>jQuery Nice Select</h3>
+		<div class="nice-select">
+	  		<span class="current">Some option</span>
+	  		<ul class="list">
+			   <li class="option selected">Some option</li>
+			   <li class="option">Another option</li>
+			   <li class="option">Potato</li>
+	  		</ul>
+		</div>
+		<h3>Nice Checkbox</h3>
+		<form action="#">
+			<div>
+				<label for="ch1">label 1</label>
+				<input type="checkbox" class="niceCheck" id="ch1" tabindex="1" /> </div>
+			<div>
+				<label for="ch2">label 2</label>
+				<input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" /></div>
+			<div>
+				<label for="ch3">label 3</label>
+				<input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" /></div>
+		</form>
+		<h3 class="heading">Кастомные checkbox на CSS</h3>
+		<input type="checkbox" id="test-check1" />
+		<label class="custom" for="test-check1">Чекбокс 1:</label>
+</body>
+</html>
