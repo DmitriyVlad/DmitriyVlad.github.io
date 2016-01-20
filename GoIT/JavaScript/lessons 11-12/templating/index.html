@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/html" id="profile">
+		<div class="wrapper">
+			<h1><%= title %></h1>
+			<div class="photo">
+				<img src="<%= photo %>" alt="deleted" height="250px">
+			</div>
+			<p class="text"><%= student %></p>
+			<hr size="1" noshade="noshade">
+			<p class="text"><%= frontend %></p>
+			<div class="text">
+				<ul>
+					<li><%= frontendItem1 %></li>
+					<li><%= frontendItem2 %></li>
+					<li><%= frontendItem3 %></li>
+				</ul>
+			</div>
+			<hr size="1" noshade="noshade">
+			<p class="text">
+				<%= phoneNumber %> 
+			</p>
+		</div>
+	</script>
+</body>
+</html>

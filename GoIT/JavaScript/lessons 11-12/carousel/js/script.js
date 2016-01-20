@@ -1,0 +1,5 @@
+$(function() {
+
+	$('.carousel-list').slider();
+
+});

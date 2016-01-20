@@ -1,0 +1,17 @@
+.wrapper {
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 500px;
+	line-height: 20px;
+}
+.photo {
+	text-align: center;
+}
+h1 {
+	text-align: Center;
+	font-size: 25px;
+}
+.text {
+	padding-left: 5px;
+}
