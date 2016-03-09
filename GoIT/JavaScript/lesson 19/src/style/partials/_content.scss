@@ -63,7 +63,7 @@
 		content: '';
 		width: 10px;
 		height: 9px;
-		background: url('../../img/arrows-sprite.png') no-repeat;
+		background: url('../img/arrows-sprite.png') no-repeat;
 		background-position: 0 0;
 		right: -19px;
 		bottom: 4px;		
@@ -115,7 +115,7 @@
 			width: 260px;
 			height: 260px;
 			opacity: 0;
-			background: url('../../img/skin.png') no-repeat;
+			background: url('../img/skin.png') no-repeat;
 			top: 0;
 			left: 0;
 		}
@@ -314,38 +314,38 @@
 	&:nth-child(1) {
 
 		.brands__link {
-			background: url('../../img/brand1.png') center no-repeat;
+			background: url('../img/brand1.png') center no-repeat;
 		}
 	}
 	&:nth-child(2) {
 
 		.brands__link {
-			background: url('../../img/brand2.png') center no-repeat;
+			background: url('../img/brand2.png') center no-repeat;
 		}
 	}
 	&:nth-child(3) {
 
 		.brands__link {
-			background: url('../../img/brand3.png') center no-repeat;
+			background: url('../img/brand3.png') center no-repeat;
 			width: 185px;
 		}
 	}
 	&:nth-child(4) {
 
 		.brands__link {
-			background: url('../../img/brand4.png') center no-repeat;
+			background: url('../img/brand4.png') center no-repeat;
 		}
 	}
 	&:nth-child(5) {
 
 		.brands__link {
-			background: url('../../img/brand5.png') center no-repeat;
+			background: url('../img/brand5.png') center no-repeat;
 		}
 	}
 	&:nth-child(6) {
 
 		.brands__link {
-			background: url('../../img/brand6.png') center no-repeat;
+			background: url('../img/brand6.png') center no-repeat;
 			margin-right: 0;
 		}
 	}

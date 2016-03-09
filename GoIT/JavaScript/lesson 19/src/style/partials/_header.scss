@@ -17,7 +17,7 @@
 	display: block;
 	width: 16px;
 	height: 16px;
-	background: url("../../img/social-sprite.png") no-repeat;
+	background: url("../img/social-sprite.png") no-repeat;
 }
 .facebook {
 	@include link-status(0,0)
