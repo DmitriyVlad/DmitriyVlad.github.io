@@ -1,0 +1,125 @@
+// logo
+.logo {
+	padding: 37px 0 37px 0;
+	float: left;
+}
+
+//  social links
+.social-links {
+	float: right;
+	margin: 48px 3px 0 0;
+}
+.social-links__item {
+	float: left;
+	margin-left: 20px;
+}
+.social-links__link {
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url("../../img/social-sprite.png") no-repeat;
+}
+.facebook {
+	@include link-status(0,0)
+
+	&:hover {
+		@include link-status(0,-20px);
+	}
+}
+.twitter {
+	@include link-status(-17px,0);
+	
+	&:hover {
+		@include link-status(-17px,-20px);
+	}
+}
+.rss {
+	@include link-status(-35px,0);
+
+	&:hover {
+		@include link-status(-35px,-20px);
+	}
+}
+.linkedin {
+	@include link-status(-55px,0);
+
+	&:hover {
+		@include link-status(-55px,-20px);
+	}
+}
+.skype {
+	@include link-status(-76px,0);
+
+	&:hover {
+		@include link-status(-76px,-20px);
+	}
+}
+
+// main menu
+nav {
+	clear: both;
+	background: #2a2d32;
+	overflow: hidden;
+}
+.menu {
+	float: left;
+}
+.menu__item {
+	float: left;
+
+	&--active {
+		background-color: #248cec;
+
+		&:hover .menu__link {
+			color: white;
+		}
+	}	
+
+}
+.menu__link {
+	display: block;
+	padding: 0 40px;
+	line-height: 56px;
+	color: white;
+	font-family: $ubuntu;
+	font-size: 14px;
+	text-transform: uppercase;
+	border-right: 1px solid #181a1d;
+
+	&:hover {
+		color: #f4b60d;
+	}
+}
+
+// form search
+.search {
+	position: relative;
+	float: right;
+	margin: 8px;
+
+	&:after {
+		position: absolute;
+		display: inline-block;
+		content: '\1F50D';
+		font-family: FontAwesome;
+		opacity: 0.25;
+    width: 10px;
+    height: 10px;
+    color: white;
+    top: 13px;
+    right: 18px;
+	}
+}
+.search__item {
+	width: 241px;
+	height: 40px;
+	color: #626466;
+	padding-left: 14px;
+	background-color: rgba(255, 255, 255, 0.05);
+	border: 1px solid #181a1d;
+
+	&:focus {
+		outline: none;
+	}
+}
+
