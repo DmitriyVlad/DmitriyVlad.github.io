@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/main.js"></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<h2 class="center-text">Тест по веб-разработке</h2>
+		<form>
+			<div class="questions"></div>
+			<div class="buttons center-text">
+				<input type="submit" class="btn btn-success check" value="Проверить мои результаты">
+				<input type="reset" class="btn btn-danger clear" value="Очистить ответы">
+			</div>
+		</form>
+	</div>
+	<script type="text/html" id="webTest">
+		<% for (var i = 0; i < data.length; i++) { %>
+			<div class="box<%= i %>">
+				<h4><%= data[i].question %></h4>
+				<% for (var k =0; k < data[i].answer.length; k++) { %>
+					<div class="answer">
+						<label>
+							<input type="checkbox">
+							<%= data[i].answer[k] %>
+						</label>
+					</div>
+				<% }; %>
+			</div>
+		<% }; %>
+	</script>
+</body>
+</html>

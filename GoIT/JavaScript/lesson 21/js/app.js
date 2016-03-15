@@ -8,7 +8,7 @@ module.exports = function pow(x, n) {
 		for (var i = 0; i < n; i++) {
 		result *= x;
 		}
-
+		
 		return result;
 	}
 };
