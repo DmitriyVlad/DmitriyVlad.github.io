@@ -1,0 +1,122 @@
+.header__wrapper {
+	margin: 0 auto;
+	width: 280px;
+	text-align: center;
+	overflow: hidden;
+
+	@include respond-to(tablets) {
+		width: 668px;
+	}
+
+	@include respond-to(desktop) {
+		width: 940px;
+	}
+}
+.header {
+	background: url(../img/header-bg.jpg) no-repeat center;
+	background-size: cover;
+	height: 540px;
+
+	&__top-line {
+		position: relative;
+		margin-top: 20px;
+		height: 36px;
+
+		@include respond-to(tablets) {
+			margin-top: 38px;
+		}
+	}
+
+	&__title {
+		margin-top: 170px;
+		display: inline-block;
+		color: $link;
+		font-family: $montserrat-b;
+		font-size: 30px;
+		text-transform: uppercase;
+	
+		@include respond-to(tablets) {
+			font-size: 52px;
+			width: 500px;
+			line-height: 64px;
+			margin-top: 140px;
+		}
+	}
+
+	&__btn {
+		display: block;
+		margin-top: 15px;
+		color: $link;
+		font-family: $montserrat-b;
+		font-size: 14px;
+		width: 280px;
+		line-height: 40px;
+		text-align: center;
+		background-color: #ff4e50;
+		border-radius: 20px;
+		display: inline-block;
+
+		@include respond-to(tablets) {
+			width: 226px;
+			margin-top: 38px;
+		}
+	}
+
+	&__text {
+		margin-top: 13px;
+		line-height: 22px;
+		color: $link;
+		font-family: $roboto-l;
+		font-size: 18px;
+
+		@include respond-to(tablets) {
+			font-size: 24px;
+			margin-top: 16px;
+		}
+	}
+
+	@include respond-to(tablets) {
+		height: 700px;
+	}
+}
+.logo {
+	display: inline-block;
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	margin-left: -83.5px;
+	font-family: $montserrat-b;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.75px;
+	color: $link;
+
+	@include respond-to(tablets) {
+		position: static;
+		float: left;
+		margin-left: 0;
+		line-height: 36px;
+	}
+}
+.login {
+	
+	&__btn {
+		display: inline-block;
+		font-family: $montserrat-b;
+		font-size: 14px;
+		color: $link;
+
+		&--border {
+			border: 2px solid white;
+			border-radius: 18px;
+			width: 90px;
+			height: 36px;
+			line-height: 33px;
+			text-align: center;
+			margin-left: 16px;
+		}
+	}
+	@include respond-to(tablets) {
+		float: right;
+	}
+}

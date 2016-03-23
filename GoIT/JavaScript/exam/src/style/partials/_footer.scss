@@ -1,0 +1,128 @@
+.footer {
+	border-top: 4px solid #ff4e50;
+	padding: 17px 0;
+
+	@include respond-to(tablets) {
+		padding: 40px 0;
+	}
+	
+	&__title {
+		color: #ff4e50;
+		display: block;
+		margin-bottom: 15px;
+		font-family: $montserrat-b;
+		font-size: 16px;
+		letter-spacing: .8px;
+		text-transform: uppercase;
+
+		@include respond-to(tablets) {
+			float: left;
+			margin: 0 84px 0 30px;
+		}
+
+		@include respond-to(desktop) {
+			margin: 0 98px 0 0;
+		}
+	}
+}
+.company {
+
+	@include respond-to(tablets) {
+		float: left;
+		margin-right: 100px;
+	}
+
+	&__title {
+		text-align: center;
+		color: #333;
+		font-family: $montserrat-b;
+		font-size: 14px;
+		margin-bottom: 4px;
+
+		@include respond-to(tablets) {
+			margin-bottom: 10px;
+			text-align: left;
+		}
+	}
+
+	&__menu {
+		width: 200px;
+		margin: 0 auto;
+
+		@include respond-to(tablets) {
+			width: 70px;
+		}
+
+		&__item {
+			display: block;
+			float: left;
+			margin-right: 15px;
+
+			@include respond-to(tablets) {
+				float: none;
+				text-align: left;
+				line-height: 24px;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		&__link {
+			color: #666;
+			font-family: $roboto-l;
+			font-size: 14px;
+		}
+	}
+}
+.partners-list {
+	
+	@include respond-to(tablets) {
+		float: left;
+	}
+
+	&__title {
+		color: #333;
+		font-family: $montserrat-b;
+		font-size: 14px;
+		margin: 19px 0 17px 0;
+
+		@include respond-to(tablets) {
+			margin: 0;
+		}
+	}
+}
+.designed {
+	
+	@include respond-to(tablets) {
+		float: right;
+		margin-right: 30px;
+	}
+
+	@include respond-to(desktop) {
+		margin-right: 0;
+	}
+
+	&__title {
+		display: block;
+		text-align: center;
+		margin-bottom: 8px;
+		color: #ccc;
+		font-family: $montserrat-b;
+		font-size: 10px;
+		text-transform: uppercase;
+
+		@include respond-to(tablets) {
+			text-align: right;
+		}
+	}
+
+	&__logo {
+		display: inline-block;
+		text-align: center;
+		background: url(../img/designed-by.png);
+		width: 110px;
+		height: 24px;
+	}
+}
