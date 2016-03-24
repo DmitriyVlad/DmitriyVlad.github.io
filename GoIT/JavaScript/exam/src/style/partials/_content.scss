@@ -23,7 +23,7 @@
 
 	&__title {
 		margin: 36px 0 15px 0;
-		color: #333;
+		color: $title;
 		font-family: $montserrat-b;
 		font-size: 22px;
 		text-align: center;
@@ -60,9 +60,24 @@
 		}
 	}
 
+	&__list {
+		position: relative;
+		width: 20000em;
+	}
+
 	&__item {
 		height: 400px;
+		width: 300px;
 		border-radius: 4px;
+		float: left;
+
+		@include respond-to(tablets) {
+			width: 236px;
+		}
+
+		@include respond-to(desktop) {
+			width: 300px;
+		}
 
 		&--step1 {
 			background: url(../img/step1.jpg) center no-repeat;
@@ -97,7 +112,7 @@
 		width: 70px;
 		text-align: center;
 		line-height: 20px;
-		background-color: #ff4e50;
+		background-color: $pink;
 		border-radius: 10px;
 
 		&--step2 {
@@ -217,14 +232,14 @@
 	
 	&__name {
 		margin: 17px 0 16px 0;
-		color: #333;
+		color: $title;
 		font-family: $montserrat-b;
 		font-size: 14px;
 	}
 
 	&__description {
 		display: inline-block;
-		color: #666;
+		color: $text;
 		width: 220px;
 		font-family: $roboto-l;
 		font-size: 14px;
@@ -246,7 +261,7 @@
 		}
 
 		&--pink {
-			background-color: #ff4e50;
+			background-color: $pink;
 		}
 
 		&--yellow {
@@ -321,14 +336,20 @@
 	&__btn {
 		display: inline-block;
 		text-align: center;
-		color: #ff4e50;
+		margin-bottom: 2px;
+		color: $pink;
 		font-family: $montserrat-b;
 		font-size: 14px;
 		width: 280px;
 		height: 40px;
 		line-height: 40px;
-		border: 2px solid #ff4e50;
+		border: 2px solid $pink;
 		border-radius: 20px;
+		transition: all .2s;
+		
+		&:hover {
+			box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
+		}
 
 		@include respond-to(tablets) {
 			width: 192px;
@@ -338,7 +359,7 @@
 
 // Ideas section
 .ideas__title {
-	color: #333;
+	color: $title;
 	text-align: center;
 	margin: 37px 0 18px 0;
 	font-family: $montserrat-b;
@@ -392,6 +413,7 @@
 		&__text {
 			color: white;
 			line-height: 120px;
+			text-transform: capitalize;
 			font-family: $montserrat-b;
 			font-size: 22px;
 
@@ -409,14 +431,26 @@
 	&__title {
 		@extend .ideas__title;
 		margin-bottom: 13px;
+
+		@include respond-to(tablets) {
+			margin: 78px 0 37px 0;
+		}
+	}
+
+	&__form {
+		display: inline-block;
 	}
 
 	&__text {
-		color: #333;
+		color: $title;
 		font-family: $roboto-l;
 		text-align: center;
 		font-size: 18px;
 		margin-bottom: 17px;
+
+		@include respond-to(tablets) {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__input {
@@ -432,6 +466,11 @@
 		color: #999;
 		font-family: $roboto-l;
 		font-size: 14px;
+
+		@include respond-to(tablets) {
+			display: inline-block;
+			width: 240px;
+		}
 	}
 
 	&__button {
@@ -442,10 +481,24 @@
 		margin-bottom: 40px;
 		line-height: 40px;
 		text-align: center;
-		background-color: #ff4e50;
+		background-color: $pink;
 		border-radius: 20px;
 		color: white;
 		font-family: $montserrat-b;
 		font-size: 14px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		transition: all .2s;
+		
+		&:hover {
+			box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
+		}
+
+		@include respond-to(tablets) {
+			width: 160px;
+			margin: 0 0 100px 8px;
+			vertical-align: top;
+		}
 	}
 }

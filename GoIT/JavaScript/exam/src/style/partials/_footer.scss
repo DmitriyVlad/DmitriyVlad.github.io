@@ -1,5 +1,5 @@
 .footer {
-	border-top: 4px solid #ff4e50;
+	border-top: 4px solid $pink;
 	padding: 17px 0;
 
 	@include respond-to(tablets) {
@@ -7,13 +7,18 @@
 	}
 	
 	&__title {
-		color: #ff4e50;
+		color: $pink;
 		display: block;
 		margin-bottom: 15px;
 		font-family: $montserrat-b;
 		font-size: 16px;
 		letter-spacing: .8px;
 		text-transform: uppercase;
+		transition: all .2s;
+
+		&:hover {
+			text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);
+		}
 
 		@include respond-to(tablets) {
 			float: left;
@@ -34,7 +39,7 @@
 
 	&__title {
 		text-align: center;
-		color: #333;
+		color: $title;
 		font-family: $montserrat-b;
 		font-size: 14px;
 		margin-bottom: 4px;
@@ -70,9 +75,13 @@
 		}
 
 		&__link {
-			color: #666;
+			color: $text;
 			font-family: $roboto-l;
 			font-size: 14px;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 }
@@ -83,7 +92,7 @@
 	}
 
 	&__title {
-		color: #333;
+		color: $title;
 		font-family: $montserrat-b;
 		font-size: 14px;
 		margin: 19px 0 17px 0;
@@ -124,5 +133,10 @@
 		background: url(../img/designed-by.png);
 		width: 110px;
 		height: 24px;
+		transition: all .3s;
+
+		&:hover {
+			filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.9));
+		}
 	}
 }

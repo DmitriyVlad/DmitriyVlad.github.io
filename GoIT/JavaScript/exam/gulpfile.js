@@ -12,7 +12,9 @@ var gulp = require('gulp'),
 		pngquant = require('imagemin-pngquant'),
 		rimraf = require('rimraf'),
 	  browserSync = require('browser-sync'),
+	  gutil = require('gulp-util'),
 	  reload = browserSync.reload;
+	  
 
 var path = {
 	public: {
@@ -60,7 +62,7 @@ gulp.task('js:build', function () {
   gulp.src(path.src.js) 
       .pipe(rigger()) 
       .pipe(sourcemaps.init()) 
-      .pipe(uglify()) 
+      .pipe(uglify().on('error', gutil.log)) 
       .pipe(sourcemaps.write()) 
       .pipe(gulp.dest(path.public.js)) 
       .pipe(reload({stream: true})); 

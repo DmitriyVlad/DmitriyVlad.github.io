@@ -3,12 +3,12 @@ $(function() {
 		.jcarousel({
 			animation: 'slow',
 			wrap: 'circular'
-		});
-	// 	.jcarouselAutoscroll({
-	// 		interval: 3000,
-	// 		target: '+=1',
-	// 		autostart: true
-	// });
+		})
+		.jcarouselAutoscroll({
+			interval: 5000,
+			target: '+=1',
+			autostart: true
+	});
 
 	$('.jcarousel-control-prev')
 		.on('jcarouselcontrol:active', function() {
@@ -33,19 +33,22 @@ $(function() {
 	});
 
 	var queryWord = '';
+	var API_KEY = '2272138-78bddf30ad93af5874e7a0791';
+	var page = 1;
+	var perPage = 7;
 
 	function renderImages(queryWord) {
 		$.ajax({
 			type: 'GET',
 			dataType: 'json',
 			cache: false,
-			url: 'http://api.pixplorer.co.uk/image?word=' + queryWord + '&amount=7&size=tb',
+			url: 'https://pixabay.com/api/?key=' + API_KEY + '&q=' + queryWord + '&page=' + page + '&per_page=' + perPage + '&image_type=photo',
 			success: function (data) {
 				console.log(data);
 
 				var html = $('#ideas-tmpl').html();
 				var content = tmpl( html, {
-					data: data.images
+					data: data.hits
 				});
 
 				$('.grid').remove();
@@ -69,5 +72,5 @@ $(function() {
 		query.val('');
 	});
 
-	renderImages();
+	renderImages(queryWord);
 });

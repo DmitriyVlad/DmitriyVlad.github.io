@@ -120,7 +120,7 @@
 								</p>
 							</article>
 						</li>
-						<li class="jcarousel__item jcarousel__item--step2">
+						<li class="jcarousel__item jcarousel__item--step1">
 							<article class="step-info">
 								<div class="step-info__count">Step 1</div>
 								<h4 class="step-info__title">
@@ -131,7 +131,7 @@
 								</p>
 							</article>
 						</li>
-						<li class="jcarousel__item jcarousel__item--step1">
+						<li class="jcarousel__item jcarousel__item--step2">
 							<article class="step-info">
 								<div class="step-info__count step-info__count--step2">Step 2</div>
 								<h4 class="step-info__title">
@@ -200,18 +200,20 @@
 			<div class="wrapper">
 				<h3 class="search__title">Discover holiday activity ideas</h3>
 				<p class="search__text">Hi! What are you holiday interests?</p>
-				<input type="text" placeholder="Enter your interests" class="search__input">
-				<a href="#" class="search__button">Search partners</a>
+				<form action="#" class="search__form">
+					<input type="text" placeholder="Enter your interests" class="search__input">
+					<input type="submit" class="search__button" value="Search partners">
+				</form>
 			</div>
 		</section>
 		<script type="text/template" id="ideas-tmpl">
 				<div class="grid">
-				<% for (var i = 0; i<data.length; i++) { %>
+				<% for (var i = 0; i < data.length; i++) { %>
 						<div class="grid-item
 						<% if (( i === 5 ) || ( i === 4 )){ %>
-								grid-item--width2
-								<% } %>" style = "background: url(<%= data[i].imageurl %>); background-size: cover">
-								<span class="grid-item__text"><%= data[i].word %></span>
+								grid-item--width2 
+								<% } %>" style = "background: url(<%= data[i].webformatURL %>); background-size: cover">
+								<span class="grid-item__text"><%= data[i].tags %></span>
 						</div>
 				<% }; %>
 				</div>
