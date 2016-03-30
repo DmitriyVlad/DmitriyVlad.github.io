@@ -53,7 +53,7 @@
 		width: 300px;
 	}
 
-	&:last-child {
+	&--last {
 
 		@include respond-to(tablets) {
 			margin-right: 0;
@@ -218,11 +218,11 @@
 		margin-bottom: 35px;
 	}
 
-	&:last-child {
+	&--last {
 
 		@include respond-to(desktop) {
 			margin-right: 0;
-		}
+		}		
 	}
 
 	&__img {

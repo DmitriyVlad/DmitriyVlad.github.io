@@ -83,7 +83,7 @@
 				<span class="arrows__right jcarousel-control-next"></span>
 			</div>
 		</div>
-		<div class="jcarousel">
+		<div class="jcarousel jcarousel--last">
 			<ul class="jcarousel__list">
 				<li class="jcarousel__item jcarousel__item--step3">
 					<article class="step-info">
@@ -131,7 +131,7 @@
 		<h3 class="partners__title">Meet a partner for your best holiday</h3>
 		<div class="partners__wrapper">
 			<div class="partner">
-				<img src="img/partner1.jpg" class="partner__img">
+				<img src="img/partner1.jpg" class="partner__img" alt="partner-photo">
 				<div class="partner__wrap-icon partner__wrap-icon--pink">
 					<div class="partner__icon-tv"></div>
 				</div>
@@ -139,7 +139,7 @@
 				<p class="partner__description">Based in Chicago. I love playing tennis and loud music.</p>
 			</div>
 			<div class="partner">
-				<img src="img/partner2.jpg" class="partner__img">
+				<img src="img/partner2.jpg" class="partner__img" alt="partner-photo">
 				<div class="partner__wrap-icon partner__wrap-icon--yellow">
 					<div class="partner__icon-bottle"></div>
 				</div>
@@ -147,15 +147,15 @@
 				<p class="partner__description">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
 			</div>
 			<div class="partner">
-				<img src="img/partner3.jpg" class="partner__img">
+				<img src="img/partner3.jpg" class="partner__img" alt="partner-photo">
 				<div class="partner__wrap-icon partner__wrap-icon--green">
 					<div class="partner__icon-cup"></div>
 				</div>
 				<p class="partner__name">Heather Walker</p>
 				<p class="partner__description">I'm a happy person that loves cats and climbing on mountains.</p>
 			</div>
-			<div class="partner">
-				<img src="img/partner4.jpg" class="partner__img">
+			<div class="partner partner--last">
+				<img src="img/partner4.jpg" class="partner__img" alt="partner-photo">
 				<div class="partner__wrap-icon partner__wrap-icon--blue">
 					<div class="partner__icon-plane"></div>
 				</div>
@@ -183,7 +183,7 @@
 	</div>
 </section>
 <script type="text/template" id="ideas-tmpl">
-		<div class="grid">
+		<div class="grid" id="gallery">
 		<% for (var i = 0; i < data.length; i++) { %>
 				<div class="grid-item
 				<% if (( i === 5 ) || ( i === 4 )){ %>
