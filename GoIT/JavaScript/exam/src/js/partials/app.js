@@ -43,37 +43,85 @@
 		var page = 1;
 		var perPage = 7;
 
+		// function renderImages(queryWord) {
+		// 	
+		// }
 		function renderImages(queryWord) {
-			$.ajax({
-				type: 'GET',
-				dataType: 'json',
-				cache: false,
-				url: 'https://pixabay.com/api/?key=' + API_KEY + '&q=' + queryWord + '&page=' + page + '&per_page=' + perPage + '&image_type=photo',
-				success: function (data) {
-					console.log(data);
+			if (document.all && document.documentMode && 8 === document.documentMode || 9 === document.documentMode) {
+				var xmlhttp = getXmlHttp()
+				xmlhttp.open('GET', 'https://pixabay.com/api/?key=' + API_KEY + '&q=' + queryWord + '&page=' + page + '&per_page=' + perPage + '&image_type=photo', true);
+				xmlhttp.onreadystatechange = function() {
+					if (xmlhttp.readyState == 4) {
+					 if(xmlhttp.status == 200) {
+							var data = eval('('+xmlhttp.responseText+')');
+							console.log(data);
 
-					var html = $('#ideas-tmpl').html();
-					var content = tmpl( html, {
-						data: data.hits
-					});
+							var html = $('#ideas-tmpl').html();
+							var content = tmpl( html, {
+								data: data.hits
+							});
 
-					$('.grid').remove();
-					$('.ideas .wrapper').append(content);
+							$('.grid').remove();
+							$('.ideas .wrapper').append(content);
 
-					$('#gallery').imagesLoaded(function() {
-						$('.grid').isotope({
-						itemSelector: '.grid-item',
-						layoutMode: 'masonry',
-						masonry: {
-							gutter: 20
+							$('.grid').isotope({
+								itemSelector: '.grid-item',
+								layoutMode: 'masonry',
+								masonry: {
+									gutter: 20
+								}
+							});
+						}
+					}
+				};
+
+				xmlhttp.send(null);
+
+				function getXmlHttp(){
+					var xmlhttp;
+					try {
+						xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					} catch (e) {
+						try {
+							xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+						} catch (E) {
+							xmlhttp = false;
+						}
+					}
+					if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+						xmlhttp = new XMLHttpRequest();
+					}
+					return xmlhttp;
+				}
+			} else {
+					$.ajax({
+						type: 'GET',
+						dataType: 'json',
+						cache: false,
+						url: 'https://pixabay.com/api/?key=' + API_KEY + '&q=' + queryWord + '&page=' + page + '&per_page=' + perPage + '&image_type=photo',
+						success: function (data) {
+							console.log(data);
+
+							var html = $('#ideas-tmpl').html();
+							var content = tmpl( html, {
+								data: data.hits
+							});
+
+							$('.grid').remove();
+							$('.ideas .wrapper').append(content);
+
+							$('.grid').isotope({
+								itemSelector: '.grid-item',
+								layoutMode: 'masonry',
+								masonry: {
+									gutter: 20
+								}
+							});
 						}
 					});
-				})	
-					
 				}
-			});
 		}
-
+		
 		$('.search__button').on('click', function(e) {
 			e.preventDefault();
 			var query = $('.search__input');
