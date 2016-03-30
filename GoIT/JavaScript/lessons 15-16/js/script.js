@@ -19,22 +19,19 @@ $(function() {
 	});
 });
 
-function GoogleCallback(func, data) {
-
+function GoogleCallback(somejQueryObject, data) {
 	console.log(data);
 
+	var resultObject = {};
 	var gsResult = $('#query-results').html();
-	$('.wrapper').append( tmpl(gsResult, data) );
-	
-	// var resultObject = {};
-	// var gsResult = $('#query-results').html();
 
-	// for (var i = 0; i < data.results.length; i++) {
-	// 	resultObject.visUrl = data.results[i].visibleUrl;
-	// 	resultObject.url = data.results[i].url;
-	// 	resultObject.title = data.results[i].title;
-	// 	resultObject.content = data.results[i].content;
-		// $('.wrapper').append( tmpl(gsResult, data) );
+	for (var i = 0; i < data.results.length; i++) {
+		resultObject.visUrl = data.results[i].visibleUrl;
+		resultObject.url = data.results[i].url;
+		resultObject.title = data.results[i].title;
+		resultObject.content = data.results[i].content;
+		$('.wrapper').append( tmpl(gsResult, resultObject) );
+	};
 };
 
 // 2 часть - OOP
