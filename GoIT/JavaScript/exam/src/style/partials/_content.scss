@@ -41,6 +41,7 @@
 	width: 300px;
 	height: 240px;
 	border-radius: 4px;
+	behavior: url(css/PIE.htc);
 
 	@include respond-to(tablets) {
 		float: left;
@@ -70,6 +71,7 @@
 		width: 300px;
 		border-radius: 4px;
 		float: left;
+		behavior: url(css/PIE.htc);
 
 		@include respond-to(tablets) {
 			width: 236px;
@@ -114,6 +116,7 @@
 		line-height: 20px;
 		background-color: $pink;
 		border-radius: 10px;
+		behavior: url(css/PIE.htc);
 
 		&--step2 {
 			margin-top: 30px;
@@ -228,6 +231,7 @@
 	&__img {
 		display: inline-block;
 		border-radius: 50%;
+		behavior: url(css/PIE.htc);
 	}
 	
 	&__name {
@@ -255,6 +259,7 @@
 		border: 4px solid white;
 		right: 85px;
 		top: 87px;
+		behavior: url(css/PIE.htc);
 
 		@include respond-to(tablets) {
 			right: 53px;
@@ -346,6 +351,7 @@
 		border: 2px solid $pink;
 		border-radius: 20px;
 		transition: all .2s;
+		behavior: url(css/PIE.htc);
 		
 		&:hover {
 			box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
@@ -368,6 +374,10 @@
 	@include respond-to(tablets) {
 		margin-bottom: 35px;
 	}
+
+	@include respond-to(desktop) {
+		margin-top: 97px;
+	}
 }
 
 .grid {
@@ -387,6 +397,7 @@
 		height: 120px;
 		margin-bottom: 10px;
 		border-radius: 4px;
+		behavior: url(css/PIE.htc);
 
 		@include respond-to(tablets) {
 			width: 236px;
@@ -466,6 +477,7 @@
 		color: #999;
 		font-family: $roboto-l;
 		font-size: 14px;
+		behavior: url(css/PIE.htc);
 
 		@include respond-to(tablets) {
 			display: inline-block;
@@ -490,6 +502,7 @@
 		outline: none;
 		cursor: pointer;
 		transition: all .2s;
+		behavior: url(css/PIE.htc);
 		
 		&:hover {
 			box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);

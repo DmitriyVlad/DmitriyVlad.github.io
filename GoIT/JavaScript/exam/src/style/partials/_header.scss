@@ -46,6 +46,7 @@
 
 	&__btn {
 		display: block;
+		position: relative;
 		margin-top: 15px;
 		color: $link;
 		font-family: $montserrat-b;
@@ -57,6 +58,7 @@
 		border-radius: 20px;
 		display: inline-block;
 		transition: all .2s;
+		behavior: url(css/PIE.htc);
 
 		&:hover {
 			box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
@@ -123,6 +125,7 @@
 		}
 
 		&--border {
+			position: relative;
 			border: 2px solid white;
 			border-radius: 18px;
 			width: 90px;
@@ -130,6 +133,7 @@
 			line-height: 33px;
 			text-align: center;
 			margin-left: 16px;
+			behavior: url(css/PIE.htc);
 
 			&:hover {
 				color: $pink;
