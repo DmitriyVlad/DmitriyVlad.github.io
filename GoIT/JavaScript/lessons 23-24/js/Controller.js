@@ -41,7 +41,7 @@ define(
 					view.elements.btnAdd.text('add')
 					.removeClass('todo__btn_green')
 					.off('click', edit)
-					.add('click', addItem);
+					.on('click', addItem);
 				}
 			}
 		}
