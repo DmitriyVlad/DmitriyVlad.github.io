@@ -9,7 +9,7 @@ requirejs.config({
 	}
 });
 
-require = (
+require(
 	[
 		'jquery',
 		'tmpl',
@@ -18,11 +18,9 @@ require = (
 		'Controller'
 	],
 	function($, tmpl, Model, View, Controller) {
-		
 			var model = new Model();
 			var view = new View(model);
 			var controller = new Controller(model, view);
-
 	}
 );
 

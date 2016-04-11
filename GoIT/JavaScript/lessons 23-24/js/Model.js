@@ -2,7 +2,7 @@ define(
 	'Model',
 	[],
 	function() {
-		return function Model() {
+		return function() {
 			var self = this;
 
 			self.data = ['learn HTML', 'learn CSS', 'learn JavaScript', 'learn frameworks'];

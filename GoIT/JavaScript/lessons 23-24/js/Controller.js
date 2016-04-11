@@ -2,7 +2,7 @@ define(
 	'Controller',
 	[],
 	function() {
-		return function Controller(model, view) {
+		return function(model, view) {
 			var self = this;
 
 			view.elements.btnAdd.on('click', addItem);

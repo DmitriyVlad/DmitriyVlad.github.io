@@ -2,7 +2,7 @@ define(
 	'View',
 	[],
 	function() {
-		return function View(model) {
+		return function(model) {
 			var self = this;
 
 			function init () {
