@@ -1,0 +1,78 @@
+// Global 
+* {
+	box-sizing: border-box;
+}
+.wrapper {
+	margin: 0 auto;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+}
+.clearfix:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+// Fonts
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/Montserrat-Bold/montserrat-bold-webfont.eot');
+    src: url('../fonts/Montserrat-Bold/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Montserrat-Bold/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/Montserrat-Bold/montserrat-bold-webfont.woff') format('woff'),
+         url('../fonts/Montserrat-Bold/montserrat-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/Montserrat-Regular/montserrat-regular-webfont.eot');
+    src: url('../fonts/Montserrat-Regular/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Montserrat-Regular/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Montserrat-Regular/montserrat-regular-webfont.woff') format('woff'),
+         url('../fonts/Montserrat-Regular/montserrat-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/Roboto-Light/roboto-light-webfont.eot');
+    src: url('../fonts/Roboto-Light/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Light/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/Roboto-Light/roboto-light-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Light/roboto-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Fonts variables
+$montserrat-b: 'Montserrat Bold', sans-serif;
+$montserrat-reg: 'Montserrat Regular', sans-serif;
+$roboto-l: 'Roboto Light', sans-serif;
+
+// Media mixin
+@mixin respond-to($media) {
+  @if $media == mobiles {
+    @media only screen and (max-width: 747px) { @content; }
+  }
+  @else if $media == tablets {
+    @media only screen and (min-width: 748px) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: 940px) { @content; }
+  }
+}
+
+// Colors
+$link: #fff;
+$title: #333;
+$pink: #ff4e50;
+$text: #666;
+
+
+
+
+
+
