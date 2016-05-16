@@ -14,7 +14,7 @@
           transition: all .2s ease;
 
   -webkit-transform: translateZ(0);
-  
+  -webkit-backface-visibility: hidden;
   text-align: center;
 
   color: #fff;
