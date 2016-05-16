@@ -1,4 +1,4 @@
-(function($) {
+$(function() {
 
   $(window).on('scroll', function() {
     $('.header').toggleClass('header_sticky', $(this).scrollTop() > 0);
@@ -9,4 +9,4 @@
 //     } else {
 //       $('.header').removeClass('header_sticky');
 //     }
-})(jQuery);
+});
