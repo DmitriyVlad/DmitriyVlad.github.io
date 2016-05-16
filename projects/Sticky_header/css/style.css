@@ -9,9 +9,12 @@
   width: 100%;
   padding: 30px 0;
 
- /* -webkit-transition: all .2s ease;
+  -webkit-transition: all .2s ease;
        -o-transition: all .2s ease;
-          transition: all .2s ease;*/
+          transition: all .2s ease;
+
+  -webkit-transform: translateZ(0);
+  
   text-align: center;
 
   color: #fff;
