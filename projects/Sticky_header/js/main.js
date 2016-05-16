@@ -1,12 +1,7 @@
 $(function() {
+  var stickyTopOffset = $('.sticky').offset().top;
 
   $(window).on('scroll', function() {
-    $('.header').toggleClass('header_sticky', $(this).scrollTop() > 0);
+    $('.sticky').toggleClass('sticky_fixed', $(this).scrollTop() > stickyTopOffset);
   });
-
-// if ($(this).scrollTop() > 1) {
-//       $('.header').addClass('header_sticky');
-//     } else {
-//       $('.header').removeClass('header_sticky');
-//     }
 });
