@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+
+  width: 100%;
+  padding: 30px 0;
+
+  -webkit-transition: all .2s ease;
+       -o-transition: all .2s ease;
+          transition: all .2s ease;
+  text-align: center;
+
+  color: #fff;
+  background: #4d3b36;
+}
+.header_sticky {
+  font-size: 10px;
+
+  position: fixed;
+
+  padding: 15px 0;
+
+  background: #eb613b;
+}
+body {
+  height: 2000px;
+}
