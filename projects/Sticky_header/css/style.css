@@ -6,6 +6,9 @@
   font-family: Arial, sans-serif;
   font-size: 20px;
 
+  position: fixed;
+  z-index: 99;
+
   width: 100%;
   padding: 30px 0;
 
@@ -13,26 +16,20 @@
        -o-transition: all .2s ease;
           transition: all .2s ease;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0)
-
-  -webkit-backface-visibility: hidden;
+          transform: translateZ(0);
   text-align: center;
 
   color: #fff;
   background: #4d3b36;
+
+  -webkit-backface-visibility: hidden;
 }
 .header_sticky {
   font-size: 10px;
 
-  position: fixed;
-
   padding: 15px 0;
 
-  -webkit-transform: translateZ(0);
-
   background: #eb613b;
-
-  -webkit-backface-visibility: hidden;
 }
 body {
   height: 2000px;
