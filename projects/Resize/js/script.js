@@ -32,15 +32,15 @@ $(function() {
       prevLeftWidth,
       prevRightWidth;
 
-  if (leftWidth < rightWidth) {
+  if (leftWidth < rightWidth || leftWidth > rightWidth + 3) {
     $('.text').css({'color': 'red'});
   }
 
   $(window).resize(function() {
     leftWidth = left.width();
-    rightWidth = right.width() - 1;
+    rightWidth = right.width();
 
-    if (leftWidth < rightWidth) {
+    if (leftWidth < rightWidth - 1 || leftWidth > rightWidth + 2) {
       $('.text').css({'color': 'red'});
     } else {
       $('.text').css({'color': 'grey'});
