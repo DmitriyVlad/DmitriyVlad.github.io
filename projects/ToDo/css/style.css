@@ -1,0 +1,111 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body, html {
+	height: 100%;
+	background: url(../img/landscape-sunset-blue-sunrise.jpg) center no-repeat;
+	background-size: cover;
+
+}
+.todo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 374px;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #fff;
+	box-shadow: 0 0 12.9px 0.1px #0874b2;
+}
+.todo__header {
+	display: block;
+	padding: 10px 0;
+	background: #e9eaf4;
+}
+.todo__title {
+	text-align: center;
+	font-size: 24px;
+	font-family: 'Trebuchet MS';
+	font-weight: bold;
+	color: #3f51b5;
+}
+.todo__counter {
+	text-align: center;
+	font-size: 14px;
+	font-family: 'Trebuchet MS';
+	font-weight: 400;
+	color: #959cc1;
+}
+.todo__list {
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+.todo__list__item {
+	font-family: 'Trebuchet MS';
+	font-size: 14px;
+	padding-left: 40px;
+	color: #6e759a;
+	line-height: 55px;
+	border-bottom: 1px solid #f6f7fb;
+}
+.todo__buttons {
+	float: right;
+	margin-right: 15px;
+}
+.todo__btn {
+	display: inline-block;
+	cursor: pointer;
+	opacity: .3;
+}
+.todo__btn:hover {
+	opacity: 1;
+}
+.todo__btn_edit {
+	width: 14px;
+	height: 14px;
+	background: url(../img/edit.png);
+}
+.todo__btn_remove {
+	width: 15px;
+	height: 14px;
+	margin-left: 7px;
+	background: url(../img/delete.png);
+}
+.todo__input {
+	display: inline-block;
+	width: 240px;
+	height: 40px;
+	padding-left: 15px;
+	margin-left: 25px;
+	border: 1px solid #e9eaf4;
+	border-radius: 15px;
+	outline: none;
+	color: #6790ac;
+}
+.todo__btn-add {
+	font-size: 16px;
+	font-family: 'Trebuchet MS';
+	font-weight: 400;
+	width: 64px;
+	height: 64px;	
+	margin-left: 15px;
+	cursor: pointer;
+	border-radius: 50%;
+	background: #fc8835;
+	border: none;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.todo__btn-add:hover {
+		-webkit-box-shadow: 1px 1px 1px 0.1px #0874b2;
+	-moz-box-shadow: 1px 1px 1px 0.1px #0874b2;
+	box-shadow: 1px 1px 1px 0.1px #0874b2;
+}
+.todo__btn_green {
+	background: #50e3a4;
+}
