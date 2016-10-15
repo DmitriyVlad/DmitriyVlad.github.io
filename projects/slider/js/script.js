@@ -1,4 +1,5 @@
 $(function() {
+  // slider
   var pixelOffset = 400,
   currentLeftValue = 0,
   elementsList = $('.slider__list'),
