@@ -1,0 +1,21 @@
+// Media mixin
+@mixin respond-to($media) {
+  @if $media == mobiles {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+  @else if $media == mobiles-l {
+    @media only screen and (min-width: 480px) { @content; }
+  }
+  @else if $media == tablets {
+    @media only screen and (min-width: 768px) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: 1024px) { @content; }
+  }
+  @else if $media == l-desktop {
+    @media only screen and (min-width: 1367px) { @content; }
+  }
+  @else if $media == xl-desktop {
+    @media only screen and (min-width: 1600px) {@content;}
+  }
+}
