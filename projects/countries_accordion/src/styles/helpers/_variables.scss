@@ -1,0 +1,69 @@
+// Fonts stack
+$open-sans: 'Open Sans', 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+
+// Colors
+$blue: #2e74b7;
+$dark-blue: #181d2a;
+$gray: #e0e0e0;
+$light-gray: #e3e3e3;
+$border-color: #f3f3f3;
+$light-blue: #a9b7cb;
+$dark-gray: #4e4e4e;
+$red: #EE3233;
+
+// Global
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// Clearfix
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+.clearfix:after {
+  clear:both
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  font-family: $open-sans;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.2;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+h1 {
+  margin: 0;
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+
