@@ -1,0 +1,1 @@
+export { default as ColorsRange } from './ColorsRange.jsx';

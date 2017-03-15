@@ -1,0 +1,12 @@
+.search-field {
+    background: #fff url('/assets/img/search-icon.svg') no-repeat 8px center;
+    background-size: 15px 15px;
+    width: 100%;
+    max-width: 250px;
+    outline: none;
+    padding: 6px 15px 6px 30px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 30px;
+    border: 1px solid #aaa  ;
+}
