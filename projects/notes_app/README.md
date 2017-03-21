@@ -1,4 +1,4 @@
 Notes App
 =========
 
-To run the project type in console `npm run serve`r
+To run the project type in console npm run server
