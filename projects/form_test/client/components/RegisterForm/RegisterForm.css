@@ -1,0 +1,21 @@
+.register {
+  width: 70%;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.register__label {
+  display: block;
+}
+
+.register__control {
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 6px 15px;
+}
+
+.register__row {
+  margin-bottom: 10px;
+}

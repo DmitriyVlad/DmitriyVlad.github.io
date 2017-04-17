@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1388534400000,
+        "contributor": "Donald Duck",
+        "amount": 12.34,
+        "comment": "Duck school is awesome!"
+    },
+    {
+        "id": 1420070400000,
+        "contributor": "Michael J.",
+        "amount": 89.25,
+        "comment": "My school taught me things :)"
+    },
+    {
+        "id": 1447648445503,
+        "contributor": "Krissy",
+        "amount": 52.65,
+        "comment": "I'm smart because I went here!"
+    }
+]

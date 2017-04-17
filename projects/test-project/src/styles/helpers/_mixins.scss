@@ -1,0 +1,28 @@
+// Clearfix
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  
+  &:after {
+    clear: both;
+  }
+}
+
+// Media mixin
+@mixin respond-to($media) {
+  @if $media == mobiles {
+    @media only screen and (max-width: 480px) { @content; }
+  }
+  @else if $media == mobiles-l {
+    @media only screen and (max-width: 600px) { @content; }
+  }
+  @else if $media == tablets-sm {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+  @else if $media == tablets {
+    @media only screen and (max-width: 959px) { @content; }
+  }
+}

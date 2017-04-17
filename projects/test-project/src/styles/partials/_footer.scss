@@ -1,0 +1,38 @@
+// FOOTER
+
+.footer {
+  font-size: 14px;
+  color: $footer-txt;
+  line-height: 55px;
+  height: 55px;
+  margin-bottom: 120px;
+  
+  &__content {
+    background-color: white;
+    padding-left: 25px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+  }
+
+  &__link {
+    color: $footer-txt;
+    margin-right: 11px;
+  }
+
+  @include respond-to(tablets) {
+    font-size: 16px;
+  }
+
+  @include respond-to(mobiles-l) {
+    line-height: 40px;
+    
+    &__content {
+      padding-left: 0;
+    }
+
+    &__link,
+    &__copyright {
+      display: block;
+      text-align: center;
+    }
+  }
+}

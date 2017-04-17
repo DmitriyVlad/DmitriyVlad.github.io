@@ -1,0 +1,21 @@
+{
+  "name": "donation-tutorial",
+  "version": "0.0.1",
+  "description": "Donation tutorial",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "react",
+    "tutorial",
+    "donation",
+    "example"
+  ],
+  "author": "zenva",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3"
+  }
+}

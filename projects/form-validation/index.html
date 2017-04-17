@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css"/>
+  <style>
+    label {
+      width: 100px;
+    }
+    label.error {
+      color: red;
+    }
+    input {
+      border : 1px solid #ccc;
+      outline: none;
+    }
+    input.error {
+      border-color: red;
+    }
+    .content {
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+    .error-message {
+      font-size: 14px;
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <form onsubmit="return myForm(this)" id="testForm">
+            <div>
+              <label for="firstName">First name</label>
+              <input type="text" name="firstName" id="firstName"/>
+            </div>
+
+            <div>
+              <label for="lastName">Last name</label>
+              <input type="text" name="lastName" id="lastName"/>
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email"/>
+            </div>
+
+            <button type="submit">Send</button>
+          </form>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

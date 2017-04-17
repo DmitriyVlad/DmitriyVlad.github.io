@@ -1,0 +1,66 @@
+// Global
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html, 
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: $bg url('../img/background.jpg') top center no-repeat;
+  background-size: cover;
+  font-family: $lato;
+  font-size: 12px;
+  font-weight: 400;
+  color: $article-txt;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.container {
+  position: relative;
+  // padding: 0 30px;
+  margin: 0 auto;
+  max-width: 930px;
+
+  @include respond-to(tablets) {
+    padding: 0 15px;
+  }
+
+  &_flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+  }
+
+  // @include respond-to(tablets) {
+  //   padding: 0 30px;
+  // }
+
+  // @include respond-to(desktop) {
+  //   padding: 0;
+  // }
+}
