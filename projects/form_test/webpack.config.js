@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   entry: [
     'webpack-hot-middleware/client', 
-    path.join(__dirname, '/client/index')
+    path.join(__dirname, '/client/index.js')
   ],
   output: {
     path: path.join(__dirname, '/public/assets/'),
@@ -15,12 +15,15 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin()
   ],
+  resolve: {
+    extensions: ['.js', '.jsx']
+  }, 
   module: {
     loaders: [
       {
         test: /\.js$/, 
         exclude: /node_modules/, 
-        loaders: ["react-hot-loader", "babel-loader"] ,
+        loaders: ["react-hot-loader", "babel-loader", "eslint-loader"] ,
       },
       {
         test: /\.css$/,
@@ -46,7 +49,7 @@ module.exports = {
       {
         test: /\.jsx$/,
         exclude: /node_modules/, 
-        loaders: ["react-hot-loader", "babel-loader"],
+        loaders: ["react-hot-loader", "babel-loader", "eslint-loader"],
       },
       {
         test: /\.json$/,
