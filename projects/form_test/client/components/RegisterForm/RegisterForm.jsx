@@ -51,17 +51,18 @@ export default class RegisterForm extends Component {
   }
 
   render() {
+    console.log(';ljsadf');
     return (
       <div className="register">
-        <form 
-          action="" 
+        <form
+          action=""
           className="register__form"
           onSubmit={this.handleSubmit}
         >
           <div className="register__row">
             <label htmlFor="firstName" className="register__label">First Name</label>
-            <input 
-              type="text" 
+            <input
+              type="text"
               className="register__control"
               name="firstName"
               placeholder="Your first name"
@@ -72,7 +73,7 @@ export default class RegisterForm extends Component {
           </div>
           <div className="register__row">
             <label htmlFor="lastName" className="register__label">Last Name</label>
-            <input 
+            <input
               type="text"
               className="register__control"
               name="lastName"
@@ -84,7 +85,7 @@ export default class RegisterForm extends Component {
           </div>
           <div className="register__row">
             <label htmlFor="email" className="register__label">Email</label>
-            <input 
+            <input
               type="email"
               className="register__control"
               name="email"
@@ -96,7 +97,7 @@ export default class RegisterForm extends Component {
           </div>
           <div className="register__row">
             <label htmlFor="phone" className="register__label">Phone Number</label>
-            <input 
+            <input
               type="tel"
               className="register__control"
               name="phone"
@@ -106,9 +107,9 @@ export default class RegisterForm extends Component {
               onChange={this.handleChange}
             />
           </div>
-          <input 
-            type="submit" 
-            value="SEND" 
+          <input
+            type="submit"
+            value="SEND"
             className="register__button"
           />
         </form>
