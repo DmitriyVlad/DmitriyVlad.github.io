@@ -1,0 +1,69 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "extends": ["airbnb-base", "prettier"],
+  "rules": {
+    "comma-dangle": ["warn", "never"],
+    "func-names": 0,
+    "no-param-reassign": 0,
+    "no-restricted-globals": 0,
+    "import/first": 0,
+    "import/newline-after-import": "error",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": 1,
+    "import/no-extraneous-dependencies": [
+      "warn",
+      {
+        "devDependencies": true
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "ignore"
+      }
+    ],
+    "newline-before-return": "warn",
+    "no-unused-vars": [
+      "warn",
+      {
+        "args": "all",
+        "argsIgnorePattern": "^_",
+        "vars": "all"
+      }
+    ],
+    "padded-blocks": 0,
+    "space-in-parens": 0,
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "line": {
+          "markers": ["/"],
+          "exceptions": ["-", "+"]
+        },
+        "block": {
+          "markers": ["!"],
+          "exceptions": ["*"],
+          "balanced": true
+        }
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": "webpack"
+  }
+}

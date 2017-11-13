@@ -1,0 +1,31 @@
+.table-editor {
+  border: 1px solid #dfe3ea;
+  border-radius: 5px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  color: #596066;
+  margin: 0 auto;
+  margin-top: 50px;
+  overflow: hidden;
+  padding: 25px 15px;
+  width: 800px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  &__form {
+    border-bottom: 1px solid #dfe3ea;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__table-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+}
