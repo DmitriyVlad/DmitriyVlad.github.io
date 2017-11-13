@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#ffffff">
+    <title>Table Editor</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+  </head>
+
+  <body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    <div class="table-editor">
+      <header class="table-editor__header">
+        <h1 class="table-editor__title">Table Editor App</h1>
+      </header>
+      <div class="table-editor__form">
+        <form action="" class="form" id="upload_form">
+          <div class="form__row">
+            <label for="incomes_upload" class="form__label">
+              Choose
+              <b>.csv</b> file to upload:
+            </label>
+            <input type="file" class="form__control" name="incomes_upload" id="incomes_upload" accept=".csv" required>
+            <p class="form__error"></p>
+          </div>
+          <div class="form__row">
+            <button type="submit" class="form__button">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="table-editor__table-view">
+        <p class="table-editor__tip">Table data wil be showed here</p>
+      </div>
+    </div>
+
+    <script src="./assets/js/vendor.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+
+</html>
