@@ -219,5 +219,4 @@ function handleFile(event) {
   getAsText(selectedFile);
 }
 
-inputFile.addEventListener('change', handleFile);
 form.addEventListener('submit', handleFile);
