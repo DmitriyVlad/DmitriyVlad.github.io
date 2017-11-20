@@ -1,0 +1,267 @@
+/* stylelint-disable */
+//-------------font-face--------------------
+@mixin font-face($font-name, $file-name) {
+  @font-face {
+    font-family: quote($font-name);
+    font-style: normal;
+    font-weight: normal;
+    src: url('../static/fonts/'+ $file-name + '.eot');
+    src: url('../static/fonts/'+$file-name+'.eot?#iefix')
+      format('embedded-opentype'),
+      url('../static/fonts/'+$file-name+'.woff') format('woff'),
+      url('../static/fonts/'+$file-name+'.woff2') format('woff2'),
+      url('../static/fonts/'+$file-name+'.ttf') format('truetype'),
+      url('../static/fonts/'+$file-name+'.svg##{$font-name}') format('svg');
+  }
+}
+
+//-------------CLEARFIX---------------------
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+//-------------INPUT PLACEHOLDER---------------------
+@mixin placeholder($color) {
+  &::placeholder {
+    color: $color;
+  }
+}
+
+//-------------HIDE INPUT-SEARCH DECORATORS---------------------
+@mixin clear-search-decorators() {
+  &::-ms-clear,
+  &::-ms-reveal {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+//-------------BORDER---------------------
+@mixin border($color) {
+  border: 1px solid $color;
+}
+
+@mixin border-bottom($type, $color) {
+  border-bottom: 1px $type $color;
+}
+
+@mixin border-right($type, $color) {
+  border-right: 1px $type $color;
+}
+
+@mixin border-left($type, $color) {
+  border-left: 1px $type $color;
+}
+
+@mixin border-top($type, $color) {
+  border-top: 1px $type $color;
+}
+
+@mixin transition($args...) {
+  transition: $args;
+}
+
+//-------------z-index---------------------
+@mixin z-index-content {
+  z-index: 10;
+}
+
+@mixin z-index-overlay {
+  z-index: 20;
+}
+
+@mixin z-index-fixed {
+  z-index: 15;
+}
+
+//-------------border-radius---------------------
+@mixin border-top-radius($radii) {
+  border-top-left-radius: $radii;
+  border-top-right-radius: $radii;
+}
+
+@mixin border-right-radius($radii) {
+  border-bottom-right-radius: $radii;
+  border-top-right-radius: $radii;
+}
+
+@mixin border-bottom-radius($radii) {
+  border-bottom-left-radius: $radii;
+  border-bottom-right-radius: $radii;
+}
+
+@mixin border-left-radius($radii) {
+  border-bottom-left-radius: $radii;
+  border-top-left-radius: $radii;
+}
+
+//---------------HIDE TEXT-------------------
+@mixin hide-text($height: null) {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  @if $height {
+    @warn "The `hide-text` mixin has changed and no longer requires a height. The height argument will no longer be accepted in v5.0.0";
+  }
+}
+
+//--------------WORD-WRAP--------------------
+@mixin word-wrap($wrap: break-word) {
+  overflow-wrap: $wrap;
+  word-wrap: $wrap;
+  @if $wrap==break-word {
+    word-break: break-all;
+  } @else {
+    word-break: $wrap;
+  }
+}
+
+//-------------MEDIA-MIXIN---------------------
+@mixin respond-to($media) {
+  $phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1200px;
+  $desktop-upper-boundary: 1800px;
+
+  @if $media==phone-only {
+    @media only screen and (max-width: #{$phone-upper-boundary - 1}) {
+      @content;
+    }
+  } @else if $media==tablet-portrait-up {
+    @media only screen and (min-width: $phone-upper-boundary) {
+      @content;
+    }
+  } @else if $media==tablets-landscape-up {
+    @media only screen and (min-width: $tablet-portrait-upper-boundary) {
+      @content;
+    }
+  } @else if $media==desktop-up {
+    @media only screen and (min-width: $tablet-landscape-upper-boundary) {
+      @content;
+    }
+  } @else if $media==big-desktop-up {
+    @media only screen and (min-width: $desktop-upper-boundary) {
+      @content;
+    }
+  }
+}
+
+//---------------HIGH PPI DISPLAY BACKGROUNDS-------------------
+@mixin background-2x($path, $ext: 'png', $w: auto, $h: auto, $pos: left top, $repeat: no-repeat) {
+  $at1x_path: '#{$path}.#{$ext}';
+  $at2x_path: '#{$path}@2x.#{$ext}';
+
+  background-image: url('#{$at1x_path}');
+  background-position: $pos;
+  background-repeat: $repeat;
+  background-size: $w $h;
+
+  @media all and (-webkit-min-device-pixel-ratio: 1.5),
+    all and (-o-min-device-pixel-ratio: 3/2),
+    all and (min--moz-device-pixel-ratio: 1.5),
+    all and (min-device-pixel-ratio: 1.5) {
+    background-image: url('#{$at2x_path}');
+  }
+}
+
+//---------------TEXT-OVERFLOW-------------------
+@mixin text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//---------------COVERDIV-------------------
+@mixin coverdiv {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+//---------------COVER-------------------
+@mixin cover {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//---------------VERTICAL CENTER-------------------
+@mixin vcenter {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//---------------JUSTIFY-------------------
+@mixin justify {
+  font-size: 0;
+  line-height: 0;
+  text-align: justify;
+  text-align-last: justify;
+  text-justify: newspaper;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 100%;
+  }
+}
+
+//---------------VERTICAL JUSTIFY-------------------
+@mixin vertical-justify {
+  font-size: 0;
+  text-align: center;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+  }
+}
+
+//---------------PREVENT-TEXT-------------------
+@mixin prevent-text {
+  hyphens: auto;
+  word-break: break-all;
+  word-break: break-word;
+}
+
+//---------------GPU-------------------
+@mixin gpu {
+  transform: translate3d(0, 0, 0);
+}
+
+//---------------SMOOTH-FONT-------------------
+@mixin smooth-font {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+//---------------SMOOTH-SCROLL-------------------
+@mixin smooth-scroll {
+  -webkit-overflow-scrolling: touch;
+}
