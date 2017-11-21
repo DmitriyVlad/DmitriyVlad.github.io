@@ -24,7 +24,7 @@ const validateFileType = type => fileType => fileType === type;
 const isCSV = validateFileType('csv');
 
 const isNumeric = number => !isNaN(parseFloat(number)) && isFinite(number);
-const isString = string => typeof string === 'string' && !Number(string);
+const isString = string => typeof string === 'string' && !Number(string) && string !== '';
 
 const validateSize = size => size <= MAX_SIZE;
 
