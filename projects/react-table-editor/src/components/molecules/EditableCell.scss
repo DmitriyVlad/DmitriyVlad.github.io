@@ -1,0 +1,18 @@
+@import '~Styles/imports';
+
+.EditableCell {
+  border: 1px solid #f3f3f3;
+  border-right: 1px solid #dfe3ea;
+  height: 42px;
+  padding: 10px;
+
+  &:last-child {
+    border-right-color: #f3f3f3;
+  }
+}
+
+.EditableCell--head {
+  border-bottom: 1px solid #dfe3ea;
+  font-weight: 600;
+  padding: 15px 10px;
+}

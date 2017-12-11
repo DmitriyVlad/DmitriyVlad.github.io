@@ -1,0 +1,26 @@
+@import '~Styles/imports';
+
+.Input {
+  width: 100%;
+}
+
+.Input--editable {
+  border: 0;
+  color: #596066;
+  padding: 2px 0;
+}
+
+.Input--active {
+  border: 1px solid #dfe3ea;
+  padding: 2px 5px;
+}
+
+.Input--invalid {
+  border: 1px solid #f03f2c;
+  padding: 2px 5px;
+
+  &:focus {
+    border: 1px solid #f03f2c;
+    outline: #f03f2c auto 5px;
+  }
+}
